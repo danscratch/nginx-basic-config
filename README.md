@@ -32,15 +32,17 @@ That's it.
 
 # Running nginx
 
-Normally, `nginx` wants to run off files located in `/usr/local/etc`, but we want to run with our local file.
-There are all sorts of ways in which you can get this to start up automatically, etc., etc., but here we just
-want to get this running locally.
+Normally, `nginx` wants to run off files located in `/usr/local/Cellar/nginx/1.27.3/` or some such, but we want to test with our local file. There are all sorts of ways in which you can get this to start up automatically, etc., etc., but here we just want to get this running locally.
 
 ```
 sudo nginx -c $PWD/nginx.conf
 ```
 
-Again, that's all it takes.
+Alternatively:
+
+```
+sudo nginx -p $PWD -c nginx.conf
+```
 
 # Tweaking your config
 
