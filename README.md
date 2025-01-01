@@ -5,8 +5,8 @@ it puts all resources for a website under a common host (domain:port), using the
 which server to pull from. There are four different resources being proxied:
 
 * NextJS REST API, located at `localhost:3000/api`
-* NextJS web pages, located at `localhost:3000` (everything except /api/)
 * NextJS websocket, located at `localhost:3000/_next`
+* NextJS web pages, located at `localhost:3000` (everything except `/api/` and `/_next/`)
 * New API, located at `localhost:3001/api2`
 
 There are multiple reasons to put all of these resources behind a reverse proxy:
